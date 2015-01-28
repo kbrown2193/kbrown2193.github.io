@@ -21,7 +21,7 @@ html {
   background-image:url('http://i.imgur.com/yBHB7Ey.jpg');
   height: 500px;
   background-repeat: repeat-x;
-  background-size: cover;
+  background-size: auto
 }
 .jumbotron .container {
   position: relative;

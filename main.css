@@ -18,7 +18,7 @@ html {
 }
 
 .jumbotron {
-  background-image:url('http://i.imgur.com/PXxp3wp.png');
+  background-image:url('http://i.imgur.com/b0VRHHy.png');
   height: 500px;
   background-repeat: repeat-x;
   background-size: cover;
@@ -39,7 +39,7 @@ html {
 }
 
 .neighborhood-guides {
-    background-color: #efefef;
+     background-image:url('http://i.imgur.com/1TeRxk2.png');
     border-bottom: 1px solid #dbdbdb;
 }
 .neighborhood-guides h2 {

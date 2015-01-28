@@ -28,14 +28,14 @@ html {
   top: 100px;
 }
 .jumbotron h1 {
-  color: #fff;
+  color: #00f;
   font-size: 48px;  
   font-family: 'Shift', sans-serif;
   font-weight: bold;
 }
 .jumbotron p {
   font-size: 20px;
-  color: #fff;
+  color: #00f;
 }
 
 .neighborhood-guides {

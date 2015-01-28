@@ -20,7 +20,6 @@ html {
 .jumbotron {
   background-image:url('http://i.imgur.com/eDI4iP3.jpg');
   height: 500px;
-  background-repeat: repeat-x;
   background-size: contain
 }
 .jumbotron .container {

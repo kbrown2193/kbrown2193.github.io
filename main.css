@@ -20,8 +20,7 @@ html {
 .jumbotron {
   height: 500px;
   background-repeat: no-repeat;
-  background-size: cover;
-  opacity: 0.4;
+  background-size: 25%;
 }
 .jumbotron .container {
   position: relative;

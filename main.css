@@ -20,7 +20,7 @@ html {
 .jumbotron {
   background-image:url('http://i.imgur.com/eDI4iP3.jpg');
   height: 500px;
-  background-size: auto
+  background-size: auto 
 }
 .jumbotron .container {
   position: relative;
@@ -40,7 +40,7 @@ html {
 }
 
 .neighborhood-guides {
-  background-image:url('http://i.imgur.com/eDI4iP3.jpg');
+  background-color: #efefef;
     border-bottom: 1px solid #dbdbdb;
 }
 .neighborhood-guides h2 {
@@ -54,7 +54,7 @@ html {
 
 
 .learn-more {
-  background-image:url('http://i.imgur.com/eDI4iP3.jpg');
+  background-color: #f7f7f7;
 }
 .learn-more h3 {
   font-family: 'Shift', sans-serif;

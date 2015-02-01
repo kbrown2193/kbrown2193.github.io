@@ -3,7 +3,9 @@
 <juiceboxgallery 
 
 	galleryTitle="Shields"
-	indexPageName="ShieldsGallery.html"
+	backgroundColor="rgba(34,34,34,1)"
+	useThumbDots="true"
+	indexPageName="shields2.html"
 
 >
   <image imageURL="images/myshield006fromnov20spherev001v01.jpg"

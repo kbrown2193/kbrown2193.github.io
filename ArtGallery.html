@@ -1,33 +1,29 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en-us">
   <head>
-     <div>
-        <h1>Art Gallery</h1>
-        <p>
-		Here is a collection of various artworks.
+    <script src="src/artgallery_v001.js"></script>
+    <link href="kbStyle.css" type="text/css" rel="stylesheet">
+    <div class="headerContainer">
+      <h1>Art Gallery</h1>
+        <p class="centeredP">
+		Here is a collection of various artworks in a 1024x1024 canvas.
+		Use A to go back, D to go forward, and W to toggle overlay.
 		</p>
-      </div>
+    </div>
   </head>
   <body>
-	<h2>Earth-Photo-Art</h2>
-	<blockquote class="imgur-embed-pub" lang="en" data-id="a/BtMd2"><a href="//imgur.com/a/BtMd2">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-	<h2>Knowledge</h2>
-	<blockquote class="imgur-embed-pub" lang="en" data-id="a/gY9wS"><a href="//imgur.com/a/gY9wS">Knowledge</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>	
-	<h2>Technology</h2>
-	<blockquote class="imgur-embed-pub" lang="en" data-id="a/2TMlv"><a href="//imgur.com/a/2TMlv">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-	<h2>Designs</h2>
-	<blockquote class="imgur-embed-pub" lang="en" data-id="a/kWxkS"><a href="//imgur.com/a/kWxkS">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-	<h2>Nature</h2>
-	<blockquote class="imgur-embed-pub" lang="en" data-id="a/lgpBA"><a href="//imgur.com/a/lgpBA">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
-	
+    <div class="bodyMainContainer">
+	  <canvas id = "picCanvas" width="1024" height="1024"></canvas>
+	</div>
   
-
-	<h3>Navigation Links</h3>
-	<p><a href="index.html"> Home </a></p>
-	<p><a href="BrowserGames.html">Browse Web Browser Games</a></p>
-	<p><a href="ArtGallery.html">Browse Art Gallery</a></p>
-	<p><a href="MusicGallery.html">Browse Music Gallery</a></p>
-	<p><a href="AboutMe.html"> About me </a></p>
+    <div class="navigationContainer">
+	  <h3 class="navTitle">Navigation Links</h3>
+	  <p class="navLink"><a href="index.html"> Home </a></p>
+	  <p class="navLink"><a href="BrowserGames.html">Web Browser Games</a></p>
+	  <p class="navLink"><a href="GroupProjects.html">Group Projects</a></p>
+	  <p class="navLink"><a href="ArtGallery.html">Art Gallery</a></p>
+	  <p class="navLink"><a href="MusicGallery-SoundCloud.html">Music Gallery-SoundCloud</a></p>
+	  <p class="navLink"><a href="AboutMe.html">About Me</a></p>
+	</div>
   </body>
 </html>

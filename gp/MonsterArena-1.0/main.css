@@ -1,0 +1,141 @@
+#toplevel {
+  width: 1180px !important;
+  height: 595px;
+  display: inline-block;
+  text-align: center;
+}
+#toplevel #monsters {
+  width: 590px;
+  height: 560px;
+  float: left;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+  display: inline-block;
+  background-image: url("img/arena3.png");
+  background-size: 100% 100%;
+}
+#toplevel #spawner {
+  width: 295px;
+  height: 595px;
+  float: left;
+  padding: 0 0 0 0;
+  margin: 0 auto;
+  display: inline-block;
+}
+#toplevel #arena {
+  width: 590px;
+  height: 590px;
+  float: left;
+  margin: 0 auto;
+  margin-top: 2.5px;
+  padding: 0 0 0 0;
+}
+#toplevel #arena #level {
+  float: left;
+  padding-left: 150px;
+  padding-bottom: 0;
+}
+#toplevel #arena #health {
+  -webkit-apperance: none;
+  padding-left: 25px;
+  padding-bottom: 0px;
+}
+#toplevel #arena #health::-webkit-meter-optimum-value {
+  background: blue;
+}
+#toplevel #shop {
+  width: 295px;
+  height: 595px;
+  float: left;
+  padding: 0 0 0 0;
+  margin: 0 auto;
+  display: inline-block;
+}
+#toplevel .splash {
+  position: absolute;
+  width: 1180px;
+  height: 615px;
+  background-image: url("img/splashscreen.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 5px double #000;
+  display: none;
+}
+#toplevel .help_arena {
+  position: absolute;
+  width: 1180px;
+  height: 615px;
+  background-image: url("img/help_screen/help_arena.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 5px double #000;
+  display: none;
+}
+#toplevel .help_stats {
+  position: absolute;
+  width: 1180px;
+  height: 615px;
+  background-image: url("img/help_screen/help_stats.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 5px double #000;
+  display: none;
+}
+#toplevel .help_shop {
+  position: absolute;
+  width: 1180px;
+  height: 615px;
+  background-image: url("img/help_screen/help_shop.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: 5px double #000;
+  display: none;
+}
+#toplevel #game_over {
+  position: absolute;
+  width: 1180px;
+  height: 615px;
+  border: 5px double #000;
+  background-color: white;
+  display: none;
+  text-align: center;
+}
+#toplevel #game_over h1 {
+  font-size: 76px;
+}
+#toplevel #game_over p {
+  font-size: 16px;
+}
+#toplevel #game_over a {
+  text-decoration: none;
+}
+#toplevel #game_over a:hover {
+  text-decoration: underline;
+}
+#toplevel #credits {
+  position: absolute;
+  width: 1180px;
+  height: 615px;
+  background-color: white;
+  border: 5px double #000;
+  display: none;
+}
+#toplevel #credits #c_box {
+  border-bottom: 1px double black;
+}
+#toplevel #credits h1 {
+  font-size: 76px;
+}
+#toplevel #credits #cont_list li {
+  font-size: 18px;
+  text-align: left;
+}
+#toplevel #credits .left_align {
+  text-align: left;
+}
+.menu {
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

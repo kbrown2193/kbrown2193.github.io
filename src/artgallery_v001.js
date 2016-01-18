@@ -189,15 +189,15 @@ var _isDrawingOverlay = true; // boolean for drawing overlay
 // The names of the images stored as a string
 var imageNames = {
 	0: "AE-NS-0-nfr-0x00",
-	1: "AENumber_Strokes_01,",
+	1: "AENumber_Strokes_01",
 	2: "AENumber_Strokes_02",
-	3: "Infocard_1024_Comp-OS_01_01",
+	3: "Infocard_1024_Comp-OS_03",
 	4: "holdoff001v035",
 	5: "galaxy001v001chrv015",
 	6: "radial001v042",
 	7: "triangle001v012",
 	8: "tiles001v008v017",
-	9: "myshield006fromnov20spherev018v01",
+	9: "shield006nov20spherev018v01",
 	10: "1178j_bwDot",
 	11: "1183j_BwJewels",
 	12: "1170j_Desgn3x3Multi",
@@ -206,7 +206,7 @@ var imageNames = {
 	15: "1092j_WaterBallRings",
 	16: "DowntownView_2BlueSkies",
 	17: "20141029_121800_Scenic",
-	18: "20151113_135401-EFFECTS_TreesLLighting",
+	18: "20151113_135401_TreesLighting",
 	19: "2015-07-30_PeaceOnEarth"
 	}
 

@@ -189,7 +189,7 @@ var _isDrawingOverlay = true; // boolean for drawing overlay
 // The names of the images stored as a string
 var imageNames = {
 	0: "AE-NS-0-nfr-0x00",
-	1: "
+	1: "AENumber_Strokes_01,"
 	2: "AENumber_Strokes_02",
 	3: "Infocard_1024_Comp-OS_01_01",
 	4: "holdoff001v035",

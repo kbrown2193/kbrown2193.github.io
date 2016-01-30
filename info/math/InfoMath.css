@@ -1,0 +1,76 @@
+/* CSS Styling for kb HTML */
+body {
+	background-color: #222222
+}
+h1 {
+    color: #CCCCCC;
+    text-align: center;
+}
+h2 {
+    color: #BBBBBB;
+    text-align: left;
+}
+h3 {
+    color: #AAAAAA;
+    text-align: left;
+}
+h3.navTitle{
+    color: #AAAAAA;
+    text-align: left;
+}
+
+p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+	color: #AAAAAA
+}
+p.centeredP {
+    font-family: "Times New Roman";
+    font-size: 20px;
+	color: #AAAAAA;
+	text-align: center;
+}
+p.navLink{
+    display: inline;
+	padding: 10px;
+}
+
+
+div.headerContainer {
+
+
+
+}
+
+div.bodyMainContainer {
+
+
+
+}
+div.navigationContainer {
+
+}
+
+/* unvisited link */
+a:link {
+    color: #FF0000;
+	text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: #00FF00;
+	text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: #FFFF00;
+	text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+    color: #0000FF;
+	text-decoration: underline;
+}

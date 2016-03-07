@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="0.888889in" height="0.888889in"
+     viewBox="0 0 64 64">
+  <path id="PA_15_ayin_from08"
+        fill="none" stroke="black" stroke-width="1"
+        d="M 32.00,56.00
+           C 7.27,55.82 3.09,16.45 32.00,16.00
+             57.99,16.12 60.77,56.14 32.00,56.00" />
+</svg>

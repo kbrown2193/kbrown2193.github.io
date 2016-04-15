@@ -176,7 +176,221 @@ var prefixJPG = "img/jpegs/";
 var postfixJPG =".jpg";
 
 var prefixPA = "img/svg/PA_00/PA_00_";
-var postfixPA = ".svg";
+var postfixSVG = ".svg";
+var prefixGA ="img/svg/GA_00/GA_64_00_";
+
+
+
+
+
+var symbolX = {
+	0: 0,
+	1: 64,
+	2: 128,
+	3: 192,
+	4: 256,
+	5: 320,
+	6: 384,
+	7: 448,
+	8: 0,
+	9: 64,
+	10: 128,
+	11: 192,
+	12: 256,
+	13: 320,
+	14: 384,
+	15: 448,
+	16: 0,
+	17: 64,
+	18: 128,
+	19: 192,
+	20: 256,
+	21: 320,
+	22: 384,
+	23: 448,
+	24: 0,
+	25: 64,
+	26: 128,
+	27: 192,
+	28: 256,
+	29: 320,
+	30: 384,
+	31: 448,
+	32: 0,
+	33: 64,
+	34: 128,
+	35: 192,
+	36: 256,
+	37: 320,
+	38: 384,
+	39: 448,
+	40: 0,
+	41: 64,
+	42: 128,
+	43: 192,
+	44: 256,
+	45: 320,
+	46: 384,
+	47: 448,
+	48: 0,
+	49: 64,
+	50: 128,
+	51: 192,
+	52: 256,
+	53: 320,
+	54: 384,
+	55: 448,
+	56: 0,
+	57: 64,
+	58: 128,
+	59: 192,
+	60: 256,
+	61: 320,
+	62: 384,
+	63: 448
+}
+
+
+var symbolY = {
+	0: 0,
+	1: 0,
+	2: 0,
+	3: 0,
+	4: 0,
+	5: 0,
+	6: 0,
+	7: 0,
+	8: 64,
+	9: 64,
+	10: 64,
+	11: 64,
+	12: 64,
+	13: 64,
+	14: 64,
+	15: 64,
+	16: 128,
+	17: 128,
+	18: 128,
+	19: 128,
+	20: 128,
+	21: 128,
+	22: 128,
+	23: 128,
+	24: 192,
+	25: 192,
+	26: 192,
+	27: 192,
+	28: 192,
+	29: 192,
+	30: 192,
+	31: 192,
+	32: 256,
+	33: 256,
+	34: 256,
+	35: 256,
+	36: 256,
+	37: 256,
+	38: 256,
+	39: 256,
+	40: 320,
+	41: 320,
+	42: 320,
+	43: 320,
+	44: 320,
+	45: 320,
+	46: 320,
+	47: 320,
+	48: 384,
+	49: 384,
+	50: 384,
+	51: 384,
+	52: 384,
+	53: 384,
+	54: 384,
+	55: 384,
+	56: 448,
+	57: 448,
+	58: 448,
+	59: 448,
+	60: 448,
+	61: 448,
+	72: 448,
+	73: 448,
+	
+}
+
+
+
+var symbolPaths = {
+	0: "00",
+	1: "01",
+	2: "02",
+	3: "03",
+	4: "04",
+	5: "05",
+	6: "06",
+	7: "07",
+	8: "08",
+	9: "09",
+	10: "10",
+	11: "11",
+	12: "12",
+	13: "13",
+	14: "14",
+	15: "15",
+	16: "16",
+	17: "17",
+	18: "18",
+	19: "19",
+	20: "20",
+	21: "21",
+	22: "22",
+	23: "23",
+	24: "24",
+	25: "25",
+	26: "26",
+	27: "27",
+	28: "28",
+	29: "29",
+	30: "30",
+	31: "31",
+	32: "32",
+	33: "33",
+	34: "34",
+	35: "35",
+	36: "36",
+	37: "37",
+	38: "38",
+	39: "39",
+	40: "40",
+	41: "41",
+	42: "42",
+	43: "43",
+	44: "44",
+	45: "45",
+	46: "46",
+	47: "47",
+	48: "48",
+	49: "49",
+	50: "50",
+	51: "51",
+	52: "52",
+	53: "53",
+	54: "54",
+	55: "55",
+	56: "56",
+	57: "57",
+	58: "58",
+	59: "59",
+	60: "60",
+	61: "61",
+	62: "62",
+	63: "63"
+}
+
+
+
+
 var phonecianX = {
 	0: 0,
 	1: 64,
@@ -541,97 +755,251 @@ function drawPhonecianAlphabet()
     // Icon 0 : alep
     alepIcon.onload = function () {
 	ctx.drawImage(alepIcon, phonecianX[0], phonecianY[0]);  }
-	alepIcon.src = prefixPA + phonecianPaths[0] + postfixPA;
+	alepIcon.src = prefixPA + phonecianPaths[0] + postfixSVG;
 	// Icon 1 : bet
 	betIcon.onload = function () {
 	ctx.drawImage(betIcon, phonecianX[1], phonecianY[1]); }
-	betIcon.src = prefixPA + phonecianPaths[1] + postfixPA;
+	betIcon.src = prefixPA + phonecianPaths[1] + postfixSVG;
 	// Icon 2 : giml
 	gimlIcon.onload = function () {
 	ctx.drawImage(gimlIcon, phonecianX[2], phonecianY[2]); }
-	gimlIcon.src = prefixPA + phonecianPaths[2] + postfixPA;
+	gimlIcon.src = prefixPA + phonecianPaths[2] + postfixSVG;
 	// Icon 3 : dalet
 	daletIcon.onload = function () {
 	ctx.drawImage(daletIcon, phonecianX[3], phonecianY[3]);	}
-	daletIcon.src = prefixPA + phonecianPaths[3] + postfixPA;
+	daletIcon.src = prefixPA + phonecianPaths[3] + postfixSVG;
 	// Icon 4 : he
 	heIcon.onload = function () {
 	ctx.drawImage(heIcon, phonecianX[4], phonecianY[4]); }
-	heIcon.src = prefixPA + phonecianPaths[4] + postfixPA;
+	heIcon.src = prefixPA + phonecianPaths[4] + postfixSVG;
 	// Icon 5 : waw
 	wawIcon.onload = function () {
 	ctx.drawImage(wawIcon, phonecianX[5], phonecianY[5]); }
-	wawIcon.src = prefixPA + phonecianPaths[5] + postfixPA;
+	wawIcon.src = prefixPA + phonecianPaths[5] + postfixSVG;
 	// Icon 6 : zayin
 	zayinIcon.onload = function () {
 	ctx.drawImage(zayinIcon, phonecianX[6], phonecianY[6]); }
-	zayinIcon.src = prefixPA + phonecianPaths[6] + postfixPA;
+	zayinIcon.src = prefixPA + phonecianPaths[6] + postfixSVG;
 	// Icon 7 : het
 	hetIcon.onload = function () {
 	ctx.drawImage(hetIcon, phonecianX[7], phonecianY[7]); }
-	hetIcon.src = prefixPA + phonecianPaths[7] + postfixPA;
+	hetIcon.src = prefixPA + phonecianPaths[7] + postfixSVG;
 	// Icon 8 : tet
 	tetIcon.onload = function () {
 	ctx.drawImage(tetIcon, phonecianX[8], phonecianY[8]); }
-	tetIcon.src = prefixPA + phonecianPaths[8] + postfixPA;
+	tetIcon.src = prefixPA + phonecianPaths[8] + postfixSVG;
 	// Icon 9 : yod
 	yodIcon.onload = function () {
 	ctx.drawImage(yodIcon, phonecianX[9], phonecianY[9]); }
-	yodIcon.src = prefixPA + phonecianPaths[9] + postfixPA;
+	yodIcon.src = prefixPA + phonecianPaths[9] + postfixSVG;
 	// Icon 10 : kap
 	kapIcon.onload = function () {
 	ctx.drawImage(kapIcon, phonecianX[10], phonecianY[10]); }
-	kapIcon.src = prefixPA + phonecianPaths[10] + postfixPA;
+	kapIcon.src = prefixPA + phonecianPaths[10] + postfixSVG;
 	// Icon 11 : lamed
 	lamedIcon.onload = function () {
 	ctx.drawImage(lamedIcon, phonecianX[11], phonecianY[11]); }
-	lamedIcon.src = prefixPA + phonecianPaths[11] + postfixPA;
+	lamedIcon.src = prefixPA + phonecianPaths[11] + postfixSVG;
 	// Icon 12 : mem
 	memIcon.onload = function () {
 	ctx.drawImage(memIcon, phonecianX[12], phonecianY[12]); }
-	memIcon.src = prefixPA + phonecianPaths[12] + postfixPA;
+	memIcon.src = prefixPA + phonecianPaths[12] + postfixSVG;
 	// Icon 13 : nun
 	nunIcon.onload = function () {
 	ctx.drawImage(nunIcon, phonecianX[13], phonecianY[13]); }
-	nunIcon.src = prefixPA + phonecianPaths[13] + postfixPA;
+	nunIcon.src = prefixPA + phonecianPaths[13] + postfixSVG;
 	// Icon 14 : samek
 	samekIcon.onload = function () {
 	ctx.drawImage(samekIcon, phonecianX[14], phonecianY[14]); }
-	samekIcon.src = prefixPA + phonecianPaths[14] + postfixPA;
+	samekIcon.src = prefixPA + phonecianPaths[14] + postfixSVG;
 	// Icon 15 : ayin
 	ayinIcon.onload = function () {
 	ctx.drawImage(ayinIcon, phonecianX[15], phonecianY[15]); }
-	ayinIcon.src = prefixPA + phonecianPaths[15] + postfixPA;
+	ayinIcon.src = prefixPA + phonecianPaths[15] + postfixSVG;
 	// Icon 16 : pe
 	peIcon.onload = function () {
 	ctx.drawImage(peIcon, phonecianX[16], phonecianY[16]); }
-	peIcon.src = prefixPA + phonecianPaths[16] + postfixPA;
+	peIcon.src = prefixPA + phonecianPaths[16] + postfixSVG;
 	// Icon 17 : cade
 	cadeIcon.onload = function () {
 	ctx.drawImage(cadeIcon, phonecianX[17], phonecianY[17]); }
-	cadeIcon.src = prefixPA + phonecianPaths[17] + postfixPA;
+	cadeIcon.src = prefixPA + phonecianPaths[17] + postfixSVG;
 	// Icon 18 : qop
 	qopIcon.onload = function () {
 	ctx.drawImage(qopIcon, phonecianX[18], phonecianY[18]); }
-	qopIcon.src = prefixPA + phonecianPaths[18] + postfixPA;
+	qopIcon.src = prefixPA + phonecianPaths[18] + postfixSVG;
 	// Icon 19 : res
 	resIcon.onload = function () {
 	ctx.drawImage(resIcon, phonecianX[19], phonecianY[19]); }
-	resIcon.src = prefixPA + phonecianPaths[19] + postfixPA;
+	resIcon.src = prefixPA + phonecianPaths[19] + postfixSVG;
 	// Icon 20 : sin
 	sinIcon.onload = function () {
 	ctx.drawImage(sinIcon, phonecianX[20], phonecianY[20]); }
-	sinIcon.src = prefixPA + phonecianPaths[20] + postfixPA;
+	sinIcon.src = prefixPA + phonecianPaths[20] + postfixSVG;
 	// Icon 21 : taw
 	tawIcon.onload = function () {
 	ctx.drawImage(tawIcon, phonecianX[21], phonecianY[21]); }
-	tawIcon.src = prefixPA + phonecianPaths[21] + postfixPA;
+	tawIcon.src = prefixPA + phonecianPaths[21] + postfixSVG;
 	
 	
 	if(debug){console.log("dbg:drawPhonecianAlphabet End")};
 
 }
 
+
+
+function drawGreekAlphabet()
+{
+	if(debug){console.log("dbg:drawGreekAlphabet Begun")};
+	
+	// Get Alphabet DOM Elements
+	var alpha_lower_icon = document.getElementById("alpha-lower_icon");
+	var beta_lower_icon = document.getElementById("beta-lower_icon");
+	var gamma_lower_icon = document.getElementById("gamma-lower_icon");
+	var delta_lower_icon = document.getElementById("delta-lower_icon");
+	var epsilon_lower_icon = document.getElementById("epsilon-lower_icon");
+	var zeta_lower_icon = document.getElementById("zeta-lower_icon");
+	var eta_lower_icon = document.getElementById("eta-lower_icon");
+	var theta_lower_icon = document.getElementById("theta-lower_icon");
+	var iota_lower_icon = document.getElementById("iota-lower_icon");
+	var kappa_lower_icon = document.getElementById("kappa-lower_icon");
+	var lamda_lower_icon = document.getElementById("lamda-lower_icon");
+	var mu_lower_icon = document.getElementById("mu-lower_icon");
+	var nu_lower_icon = document.getElementById("nu-lower_icon");
+	var xi_lower_icon = document.getElementById("xi-lower_icon");
+	var omicron_lower_icon = document.getElementById("omicron-lower_icon");
+	var pi_lower_icon = document.getElementById("pi-lower_icon");
+	var rho_lower_icon = document.getElementById("rho-lower_icon");
+	var sigma_lower_icon = document.getElementById("sigma-lower_icon");
+	var tau_lower_icon = document.getElementById("tau-lower_icon");
+	var upsilon_lower_icon = document.getElementById("upsilon-lower_icon");
+	var phi_lower_icon = document.getElementById("phi-lower_icon");
+	var chi_lower_icon = document.getElementById("chi-lower_icon");
+	var psi_lower_icon = document.getElementById("psi-lower_icon");
+	var omega_lower_icon = document.getElementById("omega-lower_icon");
+	var sigma_alt_lower_icon = document.getElementById("sigma-alt-lower_icon");
+	
+	
+	/*
+	// for method draw
+	for (var i = 0; i < 21; i ++)
+	{
+		var tempName = phonecianIconNames[i];
+		if (debug){console.log("dbg:dPA IconName = "+tempName)};
+		tempName.onload = function() {
+			ctx.drawImage(tempName,phonecianX[i], phonecianY[i]);
+		}
+		tempName.src =  prefixPA + phonecianPaths[i] + postfixPA;
+			if(debug){console.log("dbg:dPA.src = "+prefixPA + phonecianPaths[i] + postfixPA)};
+	}
+	*/
+	
+	// Individual name draw method
+    // Icon 0 : alpha
+    alpha_lower_icon.onload = function () {
+	ctxG.drawImage(alpha_lower_icon, symbolX[0], symbolY[0]);  }
+	alpha_lower_icon.src = prefixGA + phonecianPaths[0] + postfixSVG;
+	// Icon 1 : beta
+	beta_lower_icon.onload = function () {
+	ctxG.drawImage(beta_lower_icon, symbolX[1], symbolY[1]); }
+	beta_lower_icon.src = prefixGA + phonecianPaths[1] + postfixSVG;
+	// Icon 2 : gamma
+	gamma_lower_icon.onload = function () {
+	ctxG.drawImage(gamma_lower_icon, symbolX[2], symbolY[2]); }
+	gamma_lower_icon.src = prefixGA + phonecianPaths[2] + postfixSVG;
+	// delta_lower_icon 3 : delta
+	delta_lower_icon.onload = function () {
+	ctxG.drawImage(delta_lower_icon, symbolX[3], symbolY[3]);	}
+	delta_lower_icon.src = prefixGA + phonecianPaths[3] + postfixSVG;
+	// Icon 4 : epsilon
+	epsilon_lower_icon.onload = function () {
+	ctxG.drawImage(epsilon_lower_icon, symbolX[4], symbolY[4]); }
+	epsilon_lower_icon.src = prefixGA + phonecianPaths[4] + postfixSVG;
+	// Icon 5 : zeta
+	zeta_lower_icon.onload = function () {
+	ctxG.drawImage(zeta_lower_icon, symbolX[5], symbolY[5]); }
+	zeta_lower_icon.src = prefixGA + phonecianPaths[5] + postfixSVG;
+	// Icon 6 : eta
+	eta_lower_icon.onload = function () {
+	ctxG.drawImage(eta_lower_icon, symbolX[6], symbolY[6]); }
+	eta_lower_icon.src = prefixGA + phonecianPaths[6] + postfixSVG;
+	// Icon 7 : theta
+	theta_lower_icon.onload = function () {
+	ctxG.drawImage(theta_lower_icon, symbolX[7], symbolY[7]); }
+	theta_lower_icon.src = prefixGA + phonecianPaths[7] + postfixSVG;
+	// Icon 8 : iota
+	iota_lower_icon.onload = function () {
+	ctxG.drawImage(iota_lower_icon, symbolX[8], symbolY[8]); }
+	iota_lower_icon.src = prefixGA + phonecianPaths[8] + postfixSVG;
+	// Icon 9 : kappa
+	kappa_lower_icon.onload = function () {
+	ctxG.drawImage(kappa_lower_icon, symbolX[9], symbolY[9]); }
+	kappa_lower_icon.src = prefixGA + phonecianPaths[9] + postfixSVG;
+	// Icon 10 : lamda
+	lamda_lower_icon.onload = function () {
+	ctxG.drawImage(lamda_lower_icon, symbolX[10], symbolY[10]); }
+	lamda_lower_icon.src = prefixGA + phonecianPaths[10] + postfixSVG;
+	// Icon 11 : mu
+	mu_lower_icon.onload = function () {
+	ctxG.drawImage(mu_lower_icon, symbolX[11], symbolY[11]); }
+	mu_lower_icon.src = prefixGA + phonecianPaths[11] + postfixSVG;
+	// Icon 12 : nu
+	nu_lower_icon.onload = function () {
+	ctxG.drawImage(nu_lower_icon, symbolX[12], symbolY[12]); }
+	nu_lower_icon.src = prefixGA + phonecianPaths[12] + postfixSVG;
+	// Icon 13 : xi
+	xi_lower_icon.onload = function () {
+	ctxG.drawImage(xi_lower_icon, symbolX[13], symbolY[13]); }
+	xi_lower_icon.src = prefixGA + phonecianPaths[13] + postfixSVG;
+	// Icon 14 : omicron
+	omicron_lower_icon.onload = function () {
+	ctxG.drawImage(omicron_lower_icon, symbolX[14], symbolY[14]); }
+	omicron_lower_icon.src = prefixGA + phonecianPaths[14] + postfixSVG;
+	// Icon 15 : pi
+	pi_lower_icon.onload = function () {
+	ctxG.drawImage(pi_lower_icon, symbolX[15], symbolY[15]); }
+	pi_lower_icon.src = prefixGA + phonecianPaths[15] + postfixSVG;
+	// Icon 16 : rho
+	rho_lower_icon.onload = function () {
+	ctxG.drawImage(rho_lower_icon, symbolX[16], symbolY[16]); }
+	rho_lower_icon.src = prefixGA + phonecianPaths[16] + postfixSVG;
+	// Icon 17 : sigma
+	sigma_lower_icon.onload = function () {
+	ctxG.drawImage(sigma_lower_icon, symbolX[17], symbolY[17]); }
+	sigma_lower_icon.src = prefixGA + phonecianPaths[17] + postfixSVG;
+	// Icon 18 : tau
+	tau_lower_icon.onload = function () {
+	ctxG.drawImage(tau_lower_icon, symbolX[18], symbolY[18]); }
+	tau_lower_icon.src = prefixGA + phonecianPaths[18] + postfixSVG;
+	// Icon 19 : upsilon
+	upsilon_lower_icon.onload = function () {
+	ctxG.drawImage(upsilon_lower_icon, symbolX[19], symbolY[19]); }
+	upsilon_lower_icon.src = prefixGA + phonecianPaths[19] + postfixSVG;
+	// Icon 20 : phi
+	phi_lower_icon.onload = function () {
+	ctxG.drawImage(phi_lower_icon, symbolX[20], symbolY[20]); }
+	phi_lower_icon.src = prefixGA + phonecianPaths[20] + postfixSVG;
+	// Icon 21 : chi
+	chi_lower_icon.onload = function () {
+	ctxG.drawImage(chi_lower_icon, symbolX[21], symbolY[21]); }
+	chi_lower_icon.src = prefixGA + phonecianPaths[21] + postfixSVG;
+	// Icon 22 : psi
+	psi_lower_icon.onload = function () {
+	ctxG.drawImage(psi_lower_icon, symbolX[22], symbolY[22]); }
+	psi_lower_icon.src = prefixGA + phonecianPaths[22] + postfixSVG;
+	// Icon 23 : omega
+	omega_lower_icon.onload = function () {
+	ctxG.drawImage(omega_lower_icon, symbolX[23], symbolY[23]); }
+	omega_lower_icon.src = prefixGA + phonecianPaths[23] + postfixSVG;
+	// Icon 24 : sigma alternate
+	sigma_alt_lower_icon.onload = function () {
+	ctxG.drawImage(sigma_alt_lower_icon, symbolX[24], symbolY[24]); }
+	sigma_alt_lower_icon.src = prefixGA + phonecianPaths[24] + postfixSVG;
+	
+	
+	if(debug){console.log("dbg:drawGreekAlphabet End")};
+
+}
 // The function to initialize the scene.
 function initialize() {
 	if(debug){console.log("dbg:initialize entered")};
@@ -641,25 +1009,36 @@ function initialize() {
 	ctx = canvas.getContext("2d");
 	ctx.width = width;
 	ctx.height = height;
-
+	
+	canvasGreek = document.getElementById("greekCanvas");
+	ctxG = canvasGreek.getContext("2d");
+	ctxG.width = width;
+	ctxG.height = height;
 	
 	
-	// fill background white
+	// fill background Phonecian grey
 	ctx.beginPath();
     ctx.rect(0, 0, width, height);
 	ctx.fillStyle = "rgba(255,255,255,0.5)";
     ctx.fill();
     ctx.closePath();
+	// fill background Greek grey
+	ctxG.beginPath();
+    ctxG.rect(0, 0, width, height);
+	ctxG.fillStyle = "rgba(255,255,255,0.5)";
+    ctxG.fill();
+    ctxG.closePath();
 	// Center Vertical Line
-	ctx.beginPath();
-    ctx.rect(width/2, 0, 4, height);
-	ctx.fillStyle = "rgba(255,0,0,0.5)";
-    ctx.fill();
-    ctx.closePath();
+	//ctx.beginPath();
+    //ctx.rect(width/2, 0, 4, height);
+	//ctx.fillStyle = "rgba(255,0,0,0.5)";
+    //ctx.fill();
+    //ctx.closePath();
 	
    // Display initial image
    
     drawPhonecianAlphabet();
+	drawGreekAlphabet();
 	
 	/*
     // Icon 0 : alep

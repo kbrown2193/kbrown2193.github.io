@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+              "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="0.213334in" height="0.213334in"
+     viewBox="0 0 64 64">
+  <path id="Zetta-upper"
+        fill="none" stroke="black" stroke-width="1"
+        d="M 48.13,47.25
+           C 46.86,51.70 45.86,54.30 41.75,55.88
+             41.75,55.88 15.13,55.38 15.13,55.38
+             15.13,55.38 43.63,16.25 43.63,16.25
+             43.63,16.25 23.63,15.50 23.63,15.50
+             20.87,15.16 18.50,19.25 18.63,21.75
+             18.50,21.75 18.63,13.25 18.63,13.25" />
+</svg>

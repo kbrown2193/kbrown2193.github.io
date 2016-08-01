@@ -2,47 +2,76 @@
 <html lang="en-us">
 
   <head>
+    <meta charset="utf-8"/>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link href="kbStyle.css" type="text/css" rel="stylesheet">
-    <div class="headerContainer">
-      <h1>Visual Information</h1>
-       <p class="centeredP">
-		Here is access to various pages that display information graphically. 
-	   </p>
-    </div>
+	<title>Kyle Brown Profile Visual Information</title>
   </head>
   <body>
-    <div class="bodyMainContainer">
-      <h2>Art: Sol, Relative Planetary Distances</h2>
-	    <p>The relative distances from the sun, sol, for the planets.</p>
-	    <p><a href="info/art/visual/Planetary_Distances_PNG.html">Sol: Relative Planetary Distance PNG</a></p>
-	  <h2>Language: Alphabets</h2>
-	    <p>Alphabets of various languages in 'PNG' format</p>
-	      <p><a href="info/lang/alphabets/Alphabets_PNG.html">Alphabets Set PNG</a></p>
-		<p>Alphabets of various languages in 'SVG' format</p>
+    <!--Navigation Header-->
+    <header class="container">
+	  <div class="row">
+	    <h1 class="col-sm-4">Kyle Brown</h1>
+		<nav class="col-sm-8 text-right">
+		  <p class="navLink"><a href="index.html"> Home </a></p>
+		  <p class="navLink"><a href="VisualInformation.html"> Visual Information </a></p>
+		  <p class="navLink"><a href="Models3D.html">Models 3D</a></p>
+		  <p class="navLink"><a href="GroupProjects.html">Group Projects</a></p>
+		  <p class="navLink"><a href="MusicGallery.html">Music Gallery</a></p>
+		  <p class="navLink"><a href="AboutMe.html">About Me</a></p>
+		</nav> 
+	  </div>
+	</header>
+	<!--Main View / Big screen-->
+	<section class="jumbotron">
+	  <div class="container">
+	    <div class="row text-center">
+         Visual Information
+		</div>
+		<p class="centeredP">
+		Here is access to various pages that display information graphically. 
+		</p>
+	  </div>
+	</section>
+	<!--Supporting content-->
+	<section class="container">
+      <div class="row">
+        <figure class="col-sm-6">
+		  <h2>Art</h2>
+		  <h3>Space</h3>
+		  <p><a href="info/art/visual/Planetary_Distances_PNG.html">Sol: Relative Planetary Distance PNG</a></p>
+        </figure>      
+        <figure class="col-sm-6">
+		  <h2>Language</h2>
+		  <h3>Alphabets</h3>
+		  <p><a href="info/lang/alphabets/Alphabets_PNG.html">Alphabets Set PNG</a></p>
 	      <p><a href="info/lang/alphabets/Alphabets_SVG.html">Alphabets Set SVG</a></p>
-	  <h2>Math: Functions</h2>
-	    <p>Sine Wave</p>
-	      <p><a href="info/math/functions/Sine_Wave.html">Sine Wave Intro</a></p>
-	  <h2>Math: Geometry</h2>
-	    <p>Pythagorean theorem intro</p>
-	      <p><a href="info/math/geometry/Pythagorean_Theorem.html">Pythagorean Theorem Intro</a></p>
-	  <h2>Math: Number Systems</h2>
-	    <p>Number systems displayed in 'gif' format</p>
-	      <p><a href="info/math/numbers/Numbers_0to15.html">Values 0 to 15</a></p>
-	  <h2>Science: Electrical</h2>
-	    <p>Circuit component symbols in 'PNG' format</p>
-	      <p><a href="info/scie/electrical/Circuit_Components_I_PNG.html">Circuit Components I</a></p>
-	
-	</div>	
-	<div class="navigationContainer">
-	  <h3 class="navTitle">Navigation Links</h3>
-	  <p class="navLink"><a href="index.html"> Home </a></p>
-	  <p class="navLink"><a href="VisualInformation.html"> Visual Information </a></p>
-	  <p class="navLink"><a href="BrowserGames.html">Web Browser Games</a></p>
-	  <p class="navLink"><a href="GroupProjects.html">Group Projects</a></p>
-	  <p class="navLink"><a href="ArtGallery.html">Art Gallery</a></p>
-	  <p class="navLink"><a href="MusicGallery-SoundCloud.html">Music Gallery-SoundCloud</a></p>
-	  <p class="navLink"><a href="AboutMe.html">About Me</a></p>
-	</div>
+        </figure>
+      </div>
+      <div class="row">
+        <figure class="col-sm-6">
+		  <h2>Math</h2>
+		  <h3>Functions</h3>
+		  <p><a href="info/math/functions/Sine_Wave.html">Sine Wave Intro</a></p>
+		  <h3>Geometry</h3>
+		  <p><a href="info/math/geometry/Pythagorean_Theorem.html">Pythagorean Theorem Intro</a></p>
+		  <h3>Number Systems</h3>
+		  <p><a href="info/math/numbers/Numbers_0to15.html">Values 0 to 15 GIFs</a></p>
+        </figure>      
+        <figure class="col-sm-6">
+		  <h2>Science: Electrical</h2>
+		  <p><a href="info/scie/electrical/Circuit_Components_I_PNG.html">Circuit Components PNG</a></p>
+        </figure>
+      </div>
+    </section>
+	<!--Footer-->
+    <footer class="container">
+      <div class="row">
+	    <p class="col-sm-4"><a href="http://www.symbioticaffinity.com">&copy; Symbiotic Affinity </a></p>
+        <ul class="col-sm-8">
+          <a href="https://plus.google.com/+KyleBrownKC"><li class="col-sm-1"><img src="img/tn/Google_Plus_Shiny_Icon.svg"></li></a>		
+        </ul>
+	  </div>
+    </footer>
   </body>
 </html>

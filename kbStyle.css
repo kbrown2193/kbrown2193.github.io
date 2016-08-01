@@ -1,3 +1,102 @@
+
+/*
+  Header & Footer / Navigation styling
+*/
+
+header{
+	padding: 20px ;
+	border: 0px solid #000000;
+	background-image: url('img/bg/electron128s_onv3a008sl.png');
+	background-repeat: repeat;
+	width:100%;
+	    margin: 0;
+
+}
+
+header .row,
+footer .row{
+	display: flex;
+	align-items: center;
+	
+}
+
+header h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+  
+}
+
+header p {
+  padding: 0 20px;
+  margin: 0;
+}
+
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+
+/*
+ Jumbotron styling 
+*/
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url('http://i.imgur.com/XN6Bkr6.jpg');
+  background-size: cover;
+  color: #ffffff;
+  height: 256px;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+
+
+/* 
+  Supporting Content Styling
+*/
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
 /* CSS Styling for kb HTML */
 body {
 	background-color: #222222

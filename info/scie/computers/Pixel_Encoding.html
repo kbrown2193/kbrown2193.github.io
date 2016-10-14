@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <link href="../InfoScie.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="headerContainer">
+	<p class="navLink"><a href="../../../VisualInformation.html">Go Back</a></p>
+    </div>
+    <div class="bodyMainContainer">
+	  <h1>Pixel Encoding</h1>
+      <p class="centeredP">
+		An introduction to Pixel encoding
+      </p>
+	  <p class="">Pixel encoding mentioned in this document refers to the ability to encode information in a pixel structure,  three 256 valued(8 bit) numbers that correspond to the R, G and B values of a pixel. </p>
+	  <p class="encodingTitle">Coordinates (Planetary - Latitude / Longitude)</p>
+	  <p class="encodingDescription">
+	  A coordinates system using latitude and longitude for a planet can be encoded in pixels.  This first method has a 10,000th degree precision and uses 3 pixels for a single location.</p>
+	  <p class="encodingDescription">
+	  The first pixel is the north/south axis bearing.</p>  
+	  <p class="encodingDescription">
+	  The second pixel is the west axis bearing.</p> 
+	  <p class="encodingDescription">
+	  The third pixel is the east axis bearing.</p> 
+	  <p>For each pixel, the R value is the whole value of the coordinate(north is 0 to 89, south is 90 to 179).  The G value is the second power of the percentage coordinate(G * 255).  The B value  is the first power of the  percentage coordinate (0 to 255)
+	  </p>
+	  <p>The East and west coordinates could use a simplified pixel system to handle direction of longitude.  Currently (255,255,255) means that direction is not used.</p>
+	  <p class="examplePixel">(0,0,0)</p>
+	  <p class="examplePixelCoord">0.0000</p>
+	  <p class="examplePixel">(0,0,1)</p>
+	  <p class="examplePixelCoord">0.0001</p>
+	  <p class="examplePixel">(0,0,2)</p>
+	  <p class="examplePixelCoord">0.0002</p>
+	  <p class="examplePixel">(0,0,255)</p>
+	  <p class="examplePixelCoord">0.0255</p>
+	  <p class="examplePixel">(0,1,0)</p>
+	  <p class="examplePixelCoord">0.0256</p>
+	  <p class="examplePixel">(0,1,1)</p>
+	  <p class="examplePixelCoord">0.0257</p>
+	  <p class="examplePixel">(0,1,255)</p>
+	  <p class="examplePixelCoord">0.00511</p>
+	  <p class="examplePixel">(0,2,0)</p>
+	  <p class="examplePixelCoord">0.0512</p>
+	  <p class="examplePixel">(0,20,0)</p>
+	  <p class="examplePixelCoord">0.512</p>
+	  <p class="examplePixel">(1,0,0)</p>
+	  <p class="examplePixelCoord">1.0000</p>
+	  <p class="examplePixel">(1,39,0)</p>
+	  <p class="examplePixelCoord">1.9984</p>
+	  <p class="examplePixel">(1,39,15)</p>
+	  <p class="examplePixelCoord">1.9999</p>
+	  <p class="examplePixel">(2,0,0)</p>
+	  <p class="examplePixelCoord">2.0000</p>
+	  <p class="examplePixel">(179,39,15)</p>
+	  <p class="examplePixelCoord">179.9999</p>
+	  
+	  <p>Manhattan KS Coordinates: 39.1836 N, 95.5715 W</p>
+	  <p>Realized by three pixels(39, 7, 44), (96, 22, 85 ) (255,255,255)</p>
+	  <p>(39, 7, 44)		(96, 22, 85 )
+
+39 = 39		96 = 96
+
+7 * 256 + 44		22*256 + 85
+1,792 + 44 		5,632 + 85 THOUSANDTHS slices 
+1836			=5717 or .5717 of a degree
+</p>
+	  
+	  <img src="../img/computers/pixelEncodingIMAGE.png" alt="Figure 1." />
+	  <p class="encodingTitle">Time</p>
+	  <p class="encodingDescription"> Time can be encoded in a pixel structure in various ways.  One way uses one pixel for the year, one pixel for the month, day, and year qualifier, one pixel for the hour, minute, second.  An optional millisecond pixel can be added for fractions of a second to be represented.  LIMITATIONS, a 1 pixel representation for year is limited to 16,777,216 (2^24) years.  If a wider range of years is needed, two pixels can be used for 2.8147498e+14 (2^48) possible years. For the widest range set, we will use 2 pixels to calculate year, using 5 pixels total to declare a date.  This yields 5*3*8 = 120 bits to declare a date with millisecond precision.  Without the fraction second this yields 4*3*8 = 96 bits to declare a date.  A truncated first year pixel can lead to 3*3*8 = 72 bits to declare the date.  
+	 </p>
+	 <p>Year Value Pixels</p>
+	 <p>Year Qualifier, Month, Date Pixel</p>
+	 <p>Hour, Minute, Second Pixel</p>
+	 <p>Millisecond Pixel</p>
+	 
+	 <p>Year Value Pixels:first pixel ^25 to ^48 bits, second pixel is ^0 to ^24 bits</p>
+	 <p>Year Qualifier: 0 = a.d (utc)[Z], 1 = a.d(utc+1)[A], 2 = a.d(utc+2)[B], 3 = a.d.(utc+3),12 = a.d.(utc+12)[M], 13 = a.d.(utc-1)[N],14 = a.d.(utc-2)[O], 24 = a.d.(utc-12)[Y],... plus 12 uneven time-zones for a.d. rest currently unallocated</p>
+	 <p>YQ: 64 = b.c (utc) 0x01000000</p>
+	 <p>Hour: 0 to 23, Minute: 0 to 59, Second: 0 to 59</p>
+	 <p>Millisecond: either 0.0000 to 0.9999 (1 millionth) or .0000000 to .9999999</p>
+	 <p> (0,0,0) to (0,39,15) or... (0,0,0) to ( 152, 150,127)</p>
+	 <p> 00100111,00001111 or.	10000000,00000000,00000000 = 8,xxx,xxx +
+								00011000,10010110,01111111 = 1611 391
+	 so							10011000,10010110,01111111 = 9,999,999
+	 work...152 * 2^16 + 150 *2^8 + 127 *2^0
+
+	 
+	  <p class="examplePixels">(0,0,0), (0,7,231), (1,12,31),(23,59,59) (0,0,0)</p>
+	  <p class="examplePixelYear">2016 a.d., 12/31, </p>
+	    <img src="../img/computers/pixelEncodingIMAGE.png" alt="Figure 1."  />
+
+
+
+  </body>
+</html>

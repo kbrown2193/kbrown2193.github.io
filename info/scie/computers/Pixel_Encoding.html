@@ -8,6 +8,7 @@
 	<p class="navLink"><a href="../../../VisualInformation.html">Go Back</a></p>
     </div>
     <div class="bodyMainContainer">
+	  <h1>UNDER CONSTRUCTION</h1>
 	  <h1>Pixel Encoding</h1>
       <p class="centeredP">
 		An introduction to Pixel encoding
@@ -65,7 +66,6 @@
 1836			=5717 or .5717 of a degree
 </p>
 	  
-	  <img src="../img/computers/pixelEncodingIMAGE.png" alt="Figure 1." />
 	  <p class="encodingTitle">Time</p>
 	  <p class="encodingDescription"> Time can be encoded in a pixel structure in various ways.  One way uses one pixel for the year, one pixel for the month, day, and year qualifier, one pixel for the hour, minute, second.  An optional millisecond pixel can be added for fractions of a second to be represented.  LIMITATIONS, a 1 pixel representation for year is limited to 16,777,216 (2^24) years.  If a wider range of years is needed, two pixels can be used for 2.8147498e+14 (2^48) possible years. For the widest range set, we will use 2 pixels to calculate year, using 5 pixels total to declare a date.  This yields 5*3*8 = 120 bits to declare a date with millisecond precision.  Without the fraction second this yields 4*3*8 = 96 bits to declare a date.  A truncated first year pixel can lead to 3*3*8 = 72 bits to declare the date.  
 	 </p>
@@ -73,7 +73,7 @@
 	 <p>Year Qualifier, Month, Date Pixel</p>
 	 <p>Hour, Minute, Second Pixel</p>
 	 <p>Millisecond Pixel</p>
-	 
+	  <p class="encodingTitle">Additional Notes</p>
 	 <p>Year Value Pixels:first pixel ^25 to ^48 bits, second pixel is ^0 to ^24 bits</p>
 	 <p>Year Qualifier: 0 = a.d (utc)[Z], 1 = a.d(utc+1)[A], 2 = a.d(utc+2)[B], 3 = a.d.(utc+3),12 = a.d.(utc+12)[M], 13 = a.d.(utc-1)[N],14 = a.d.(utc-2)[O], 24 = a.d.(utc-12)[Y],... plus 12 uneven time-zones for a.d. rest currently unallocated</p>
 	 <p>YQ: 64 = b.c (utc) 0x01000000</p>
@@ -85,11 +85,9 @@
 	 so							10011000,10010110,01111111 = 9,999,999
 	 work...152 * 2^16 + 150 *2^8 + 127 *2^0
 
-	 
-	  <p class="examplePixels">(0,0,0), (0,7,231), (1,12,31),(23,59,59) (0,0,0)</p>
-	  <p class="examplePixelYear">2016 a.d., 12/31, </p>
-	    <img src="../img/computers/pixelEncodingIMAGE.png" alt="Figure 1."  />
-
+	  <p class="encodingTitle">Example Pixel</p>
+	  <p class="examplePixels">(0,0,0), (0,7,231), (0,12,31),(23,59,59),(152, 150,127)</p>
+	  <p class="examplePixelYear">2016 a.d., 12/31, 23:59:59:.9999999 UTC</p>
 
 
   </body>

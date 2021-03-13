@@ -33,42 +33,6 @@ header p {
   margin: 0;
 }
 
-/*
-  Nav Bar Formatting with active highlight
-*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-  border-right:1px solid #bbb;
-}
-
-li:last-child {
-  border-right: none;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover:not(.active) {
-  background-color: #111;
-}
-
-.active {
-  background-color: #666666;
-}
-
 
 footer {
   font-size: 12px;
@@ -185,24 +149,24 @@ div.navigationContainer {
 
 /* unvisited link */
 a:link {
-    color: #ffffff;
+    color: #FF0000;
 	text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: #ffffff;
+    color: #00FF00;
 	text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-    color: #ffffff;
+    color: #FFFF00;
 	text-decoration: underline;
 }
 
 /* selected link */
 a:active {
-    color: #ffffff;
+    color: #0000FF;
 	text-decoration: underline;
 }
